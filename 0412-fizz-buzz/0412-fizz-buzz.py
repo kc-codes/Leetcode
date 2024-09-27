@@ -5,12 +5,14 @@ class Solution:
 
             if i%3==0 and i%5==0:
                 l.append("FizzBuzz")
+                continue
             elif i%3==0:
                 l.append("Fizz")
+                continue
             elif i%5==0:
                 l.append("Buzz")
-            else:
-                i = str(i)
-                l.append(i)
+                continue
+            else:                
+                l.append(str(i))
 
         return l
